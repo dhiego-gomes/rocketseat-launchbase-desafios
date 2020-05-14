@@ -35,7 +35,7 @@ Mas se o ```totalItens > 20```, você deve ir de carro, pela quantidade de itens
 
 ### Como testar esse programa
 
-1. Copie o código do arquivo [desafio-1-2b.js](https://github.com/dhiego-gomes/rocketseat-launchbase-desafios/blob/master/02-condicionais/desafio-1-1b.js).
+1. Copie o código do arquivo [desafio-1-2b.js](https://github.com/dhiego-gomes/rocketseat-launchbase-desafios/blob/master/03-array-objetos/desafio-1-2b.js).
 2. Abra uma nova aba no seu navegador e aperte F12 para abrir o console.
 3. Clique na aba Console, cole o código copiado e aperte Enter.
 4. Você verá o nome do vizinho, os itens que ele precisa de cada estabelecimento e qual o melhor meio de transporte para fazer essas compras.
