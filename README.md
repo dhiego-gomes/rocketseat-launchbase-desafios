@@ -10,8 +10,9 @@ Veja nesse repositório as minhas soluções para os desafios do curso.
 * [Funções e métodos](https://github.com/dhiego-gomes/rocketseat-launchbase-desafios/tree/master/04-funcoes-metodos)
 * [Booleanos](https://github.com/dhiego-gomes/rocketseat-launchbase-desafios/tree/master/05-booleanos)
 
-## Fase 2: FOOFDY – Front-end :construction:
+## Fase 2: :heavy_check_mark:
 
-* Foodfy 
+* [Foodfy – Front-end](https://github.com/dhiego-gomes/rocketseat-launchbase-desafios/tree/master/foodfy)
 
-## Fase 3: FOOFDY – Back-end :construction:
+## Fase 3: :construction:
+* Foodfy – Back-end 
