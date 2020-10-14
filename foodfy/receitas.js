@@ -8,7 +8,7 @@ for (let card of cards) {
 
     card.addEventListener('click', function(){
         modalOverlay.classList.add('active')
-        modalOverlay.querySelector('img').src = `/assets/${cardImage}.png`
+        modalOverlay.querySelector('img').src = `assets/${cardImage}.png`
         modalOverlay.querySelector('p').innerHTML = cardTitle
         modalOverlay.querySelector('.card__chef').innerHTML = cartText
     })
