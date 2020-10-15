@@ -103,7 +103,8 @@ nav {
 
 /* ====== CARDS ====== */
 
-.cards {
+.cards_home,
+.cards_receitas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0px 20px;    
@@ -112,7 +113,11 @@ nav {
 .card {
     margin-top: 20px;
     margin-bottom: 10px;
-} 
+}
+
+.cards_receitas:hover {
+    cursor: pointer;
+}
 
 .card img {
     width: 300px;
