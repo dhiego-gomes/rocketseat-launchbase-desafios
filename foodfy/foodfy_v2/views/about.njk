@@ -1,0 +1,25 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Sobre</title>
+{% endblock%}
+
+{% block content %}
+
+    <div class="content">
+        
+        <h1>{{ item[0].title}}</h1>
+            <p>{{ item[2].paragraph[0] }}</p>
+            <p>{{ item[2].paragraph[1] }}</p>
+        <h2>{{ item[1].subtitle[0] }}</h2>
+            <p>{{ item[2].paragraph[2] }}</p>
+            <p>{{ item[2].paragraph[3] }}</p>
+        <h2>{{ item[1].subtitle[1] }}</h2>
+            <p>{{ item[2].paragraph[4] }}</p>
+            <p>{{ item[2].paragraph[5] }}</p>
+    
+    </div>
+
+    <script src="/scripts.js"></script>
+
+{% endblock %}

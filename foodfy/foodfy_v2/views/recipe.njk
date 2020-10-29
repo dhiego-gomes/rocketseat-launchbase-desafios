@@ -1,0 +1,58 @@
+{% extends 'layout.njk' %}
+
+    
+
+{% block content %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <div class="recipe__detail" id="{{ recipes.id }}">
+        <div class="recipe__image">
+            <img src="{{ recipes.image }}" alt="Imagem de {{ recipes.title }}">
+        </div>
+        <h1>{{ recipes.title }}</h1>
+        <p class="recipe__chef">{{ recipes.author }}</p>
+        <div class="recipe__ingredients">
+            <h2>
+                Ingredientes<button class="button">ESCONDER <span class="material-icons">expand_less</span></button>
+            </h2>
+            <div class="recipe__info">
+                <ul>
+                    {% for recipe in recipes.ingredients %}
+                        <li>{{ recipe }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="recipe__preparation">
+            <h2>
+                Modo de preparo<button class="button">ESCONDER <span class="material-icons">expand_less</span></button>
+            </h2>
+            <div class="recipe__info">
+                <ol>
+                    {% for recipe in recipes.preparation %}
+                        <li>{{ recipe }}</li>
+                    {% endfor %}
+                </ol>
+            </div>
+        </div>
+        <div class="recipe__add">
+            {% if recipes.information === '' %}                
+                
+                <div class="hide">
+
+            {% endif %}            
+                    <h2>
+                        Informações adicionais<button class="button">ESCONDER <span class="material-icons">expand_less</span></button>
+                    </h2>
+                    <div class="recipe__info">
+                        <p>{{recipes.information | striptags(true) | escape | nl2br }}</p>
+                    </div>
+                </div>
+
+        </div>
+
+    </div>
+
+    <script src="/scripts.js"></script>
+
+{% endblock %}

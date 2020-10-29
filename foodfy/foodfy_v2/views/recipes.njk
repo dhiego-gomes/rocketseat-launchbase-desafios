@@ -1,0 +1,25 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Receitas</title>
+{% endblock%}
+
+{% block content %}
+    
+    <div class="cards_recipes">                
+        
+        {% for item in items %}
+            
+            <div class="card__recipes unHide" id="{{ item.id }}">
+                <img src="assets/{{ item.image }}.png" alt="Imagem de {{ item.title }}">
+                <p>{{ item.title }}</p>
+                <span class="card__chef">{{ item.chef }}</span>
+            </div>
+
+        {% endfor %}
+            
+    </div>
+    
+    <script src="/scripts.js"></script>
+
+{% endblock %}
