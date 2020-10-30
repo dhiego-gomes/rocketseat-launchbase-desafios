@@ -12,7 +12,11 @@ Veja nesse repositório as minhas soluções para os desafios do curso.
 
 ## Fase 2: :heavy_check_mark:
 
-* [Foodfy – Front-end](https://github.com/dhiego-gomes/rocketseat-launchbase-desafios/tree/master/foodfy)
+* [Foodfy – Front-end](https://github.com/dhiego-gomes/rocketseat-launchbase-desafios/tree/master/foodfy/foodfy)
 
-## Fase 3: :construction:
-* Foodfy – Back-end 
+## Fase 3: :heavy_check_mark:
+* [Foodfy – Back-end](https://github.com/dhiego-gomes/rocketseat-launchbase-desafios/tree/master/foodfy/foodfy_v2)
+
+## Fase 4: :construction:
+
+- Admin Foodfy
