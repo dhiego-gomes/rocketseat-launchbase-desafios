@@ -112,14 +112,14 @@ nav {
     gap: 0px 20px;    
 }
 
+.card__recipes:hover {
+    cursor: pointer;
+}
+
 .card__home,
 .card__recipes {
     margin-top: 20px;
     margin-bottom: 10px;
-}
-
-.card_recipes:hover {
-    cursor: pointer;
 }
 
 .card__home img,
