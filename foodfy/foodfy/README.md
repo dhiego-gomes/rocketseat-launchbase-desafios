@@ -16,7 +16,7 @@ Na página Receitas, você pode conferir todas as receitas disponíveis no nosso
 
 ### Como testar esse site
 
-Você pode testar um preview desse site sem baixar nada [clicando aqui](https://htmlpreview.github.io/?https://github.com/dhiego-gomes/rocketseat-launchbase-desafios/blob/master/foodfy/index.html). *Observe que pode demorar alguns segundos para as páginas e scripts carregarem corretamente.*
+Você pode testar um preview desse site sem baixar nada [clicando aqui](https://htmlpreview.github.io/?https://github.com/dhiego-gomes/rocketseat-launchbase-desafios/blob/master/foodfy/foodfy/index.html). *Observe que pode demorar alguns segundos para as páginas e scripts carregarem corretamente.*
 
 Você também pode testar esses arquivos na sua própria máquina:
 1. Vá até o [repositório principal](https://github.com/dhiego-gomes/rocketseat-launchbase-desafios), clique em ```Code``` e depois em ```Donwload ZIP```.
