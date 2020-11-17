@@ -1,0 +1,39 @@
+<html>
+    <head>
+        
+        {% block head %}
+
+            <title>Learn English</title>
+            
+        {% endblock %}
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="/styles.css">
+
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+            </nav>
+                <div class="menus">
+                    <a href="/">Teacher</a>
+                    <a href="/">Students</a>
+                </div>
+            <nav>                
+
+        </header>
+
+        <div class="content">
+        
+            {% block content %}
+            {% endblock %}
+
+        </div>
+
+    </div>        
+
+    </body>
+
+</html>
