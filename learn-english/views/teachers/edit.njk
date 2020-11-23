@@ -2,20 +2,42 @@
 
 {% block content %}
 
-    <div class="card">
-        <section class="card__image" style="background: url(https://source.unsplash.com/collection/11490697/500x500) no-repeat center center / cover"></section>
-        <section class="details">
-            
+<div class="card">
+    <section class="card__image"
+        style="background: url({{ teacher.avatar_url }}) no-repeat center center / cover">
+    </section>
+
+    <section class="details">
+        <form id="form-edit" method="post" action="/teachers?_method=PUT">
+                
             <h3>Editar Perfil</h3>
                 
-                {% include "teachers/fields.njk" %}
+            {% include "teachers/fields.njk" %}
+    
+            <input
+                type="hidden"
+                name="id"
+                value="{{ teacher.id }}"
+            >                        
+                   
+        </form>
 
-                <div class="button">
-                    <button type="submit">EDITAR</button>
-                </div>
-                
-        </section>
+        <form id="form-delete" method="post" action="/teachers?_method=DELETE">
+            
+            <input
+                type="hidden"
+                name="id"
+                value="{{ teacher.id }}"
+            >            
 
-    </div>
+        </form>
+        
+        <div class="buttons">
+            <button type="submit" form="form-delete">DELETAR</button>
+            <button type="submit" form="form-edit">SALVAR</button>
+        </div>
+        
+    </section>
+</div>
 
 {% endblock content %}
