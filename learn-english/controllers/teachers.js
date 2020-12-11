@@ -1,13 +1,14 @@
 const fs = require('fs')
-const data = require('./data.json')
+const data = require('../data.json')
 const Intl = require('intl')
-const { age, date, dateShow, graduation } = require('./utils')
+const { age, date, graduation,nameSurname  } = require('../utils')
 
-// INDEX
+//  INDEX
 exports.index = function(req, res){    
     let teachers = data.teachers.map(function(teacher){
         const teacherSplit = {
             ...teacher,
+            name: nameSurname(teacher.name),
             services: teacher.services.split(',')
         }
         return teacherSplit
@@ -15,7 +16,12 @@ exports.index = function(req, res){
     return res.render('teachers/index', { teachers })
 }
 
-//  CREATE
+//  CREATE PAGE
+exports.create = function(req, res){
+    return res.render('teachers/create')
+}
+
+//  CREATE DATA
 exports.post = function(req, res){
     const keys = Object.keys(req.body)
 
@@ -62,7 +68,7 @@ exports.show = function(req, res){
 
     const teacher = {
         ...foundTeacher,
-        birth: dateShow(foundTeacher.birth),
+        birth: date(foundTeacher.birth).dateShow,
         age: age(foundTeacher.birth),
         education_level: graduation(foundTeacher.education_level),
         services: foundTeacher.services.split(','),
@@ -83,8 +89,8 @@ exports.edit = function(req, res){
     if (!foundTeacher) return res.send('Professor não encontrado!')
 
     const teacher = {
-        ...foundTeacher,        
-        birth: date(foundTeacher.birth),
+        ...foundTeacher,
+        birth: date(foundTeacher.birth).iso,
         age: age(foundTeacher.birth),
         services: foundTeacher.services.split(','),
         created_at: new Intl.DateTimeFormat('pt-BR').format(foundTeacher.created_at)

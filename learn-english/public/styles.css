@@ -44,11 +44,12 @@ header {
     z-index: 1;
     position: relative;
     text-decoration: none;
-    color: white;
+    color: var(--color-white);
 }
 
 .menus a.active {
-    font-weight: bold;
+    color: white;
+    border-bottom: 5px solid var(--color-red);
 }
 
 .menus a + a {
@@ -168,17 +169,19 @@ header {
 
 table th, tr, td {
     text-align: center;
+    border-bottom: 1px solid #3658BF33;
+    padding-bottom: 8px;
 }
 
 thead tr th {
     text-align: center;
-    color: #3658bf77;
+    color: #3658BF77;
     text-transform: uppercase;
 }
 
 tbody tr td {
     padding: 16px;
-    border-bottom: 1px solid #3658bf2a;
+    border-bottom: 1px solid #3658BF2A;
     color: #666666;
 }
 
@@ -194,14 +197,21 @@ td span {
 }
 
 
-tbody tr td:last-child a {
+tbody tr td:last-child a,
+.table-container > a {
     padding: 8px 16px;
     background: var(--color-white);
     color: #666666;
     border-radius: 4px;
 }
 
-tbody tr td:last-child a:hover {
+.table-container > a {
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+tbody tr td:last-child a:hover,
+.table-container > a:hover {
     background: var(--color-blue);
     color: white;
     transition: 400ms;
@@ -234,7 +244,7 @@ tbody tr td:first-child span:hover {
 /* === CREATE === */
 
 input {
-    width: 100%;
+    display: inline-block;
 }
 
 input::placeholder {
@@ -242,8 +252,7 @@ input::placeholder {
     font-size: 14px;
 }
 
-input[type="date"],
-select {
+input[type="date"] {
     cursor: pointer;
 }
 
@@ -254,8 +263,7 @@ input[type="radio"] {
 }
 
 select {
-    box-sizing: border-box;
-    width: 100%;
+    display: inline-block;
     padding: 8px;
     font-size: 16px;
     border-radius: 4px;

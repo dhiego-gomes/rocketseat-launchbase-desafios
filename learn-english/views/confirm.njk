@@ -1,0 +1,13 @@
+<script>
+    
+    const name = document.getElementById('name').value    
+    const formDelete = document.querySelector('#form-delete')
+    
+    formDelete.addEventListener('submit', function(event){
+        const confirmation = confirm(`Deseja excluir o perfil de "${name}"?`)
+        if (!confirmation){
+            event.preventDefault()
+        }
+    })
+
+</script>

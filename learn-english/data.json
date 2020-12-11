@@ -1,25 +1,16 @@
 {
-  "teachers": [
+  "students": [
     {
       "id": 1,
-      "avatar_url": "https://images.unsplash.com/photo-1542744094-24638eff58bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80",
-      "name": "Dhiego Gomes",
-      "birth": 534211200000,
-      "education_level": "undergraduate",
-      "type_class": "remotely",
-      "services": "Português, Matemática, História",
-      "created_at": 1605928061348
-    },
-    {
-      "id": 2,
-      "avatar_url": "https://images.unsplash.com/photo-1525571453712-090270b8354f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-      "name": "Fulana de Tal",
-      "birth": 919036800000,
-      "education_level": "high_school",
-      "type_class": "in_person",
-      "services": "Português, Matemática, História",
-      "created_at": 1605974649156
-    },
+      "avatar_url": "http://google.com",
+      "name": "Dhiego Gomes Cruz",
+      "birth": 1604880000000,
+      "email": "dhiego.jw@gmail.com",
+      "school_year": "2EM",
+      "workload": "3"
+    }
+  ],
+  "teachers": [
     {
       "id": 3,
       "avatar_url": "https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
@@ -29,6 +20,16 @@
       "type_class": "in_person",
       "services": "Design, Web, Front-end",
       "created_at": 1605974661424
+    },
+    {
+      "id": 4,
+      "avatar_url": "http://hdfghd",
+      "name": "Marcelo Jose Silva Formiga",
+      "birth": 597369600000,
+      "education_level": "high_school",
+      "type_class": "in_person",
+      "services": "Português",
+      "created_at": 1606159068871
     }
   ]
 }
